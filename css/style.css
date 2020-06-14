@@ -1,0 +1,185 @@
+@font-face {
+  font-family: Canela;
+  src: url("../fonts/Canela.woff2");
+}
+:root {
+  --bg-color: #f2f2f2;
+  --title-color: #3d5e48;
+  --accent-color: #a88d82;
+  --padding-side: 4vw;
+  --border: 1px solid rgba(27, 39, 44, 0.2);
+  --body-font: Inter, sans-serif;
+  --header-font: Canela;
+}
+body {
+  background-color: var(--bg-color);
+  font-family: var(--body-font);
+}
+
+.text-center,
+.centered {
+    text-align: center;
+}
+h1{
+  font-style: normal;
+  width: 400px;
+  position: absolute;
+  font-size: 10em;
+  color: #000;
+  /* font-family: 'Almarai', sans-serif; */
+  font-body: Inter, sans-serif;
+  header-font: Canela;
+}
+
+h2{
+  position: absolute;
+  width: 550px;
+  /* font-family: 'Almarai', sans-serif; */
+  font-family: var(--body-font)
+  font-weight: 100;
+  font-size: 0.77em;
+  /* line-height: 25px; */
+  color: #B473AC;
+}
+
+h3{
+  /* position: absolute; */
+  width: 550px;
+  /* font-family: 'Almarai', sans-serif; */
+  /* font-family: 'Inter', sans-serif; */
+  /* font-family: var(--header-font); */
+  font-family: "Antic Didone";
+  font-weight: 100;
+  font-size: 5em;
+  /* line-height: 25px; */
+  color: #f9f3d8;
+}
+
+.g {
+
+  display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+
+}
+
+.i{
+  position: relative;
+    font-size: 30px;
+    counter-increment: item 1;
+    margin: 0px 50px;
+
+}
+.h{
+  margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+li {
+  float: left;
+  font-size: 30px;
+  opacity: 0.9;
+}
+li a {
+display: block;
+  color: black;
+  text-align: center;
+  padding: 40px 40px;
+  text-decoration: none;
+  font-size: 50px;
+  opacity: 1.0;
+  font-family: "Canela";
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  /* opacity: 0.4; */
+}
+.menu-button2:hover {
+    cursor: pointer;
+    background-color: orange;/*#DDA0DD;*/
+    color: #ffffff;
+}
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.menu-mobile {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0px;
+    max-width: 100%;
+    max-height: 600px;
+}
+
+/* new css code */
+.css-typing p {
+  border-right: .15em solid orange;
+  font-family: "Canela"; /* Antic Didone*/
+  /* margin: 10px 0 0 10px; */
+  font-size: 80px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.css-typing p:nth-child(1) {
+  width: 20.3em;
+  -webkit-animation: type 1s steps(40, end);
+  animation: type 3s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  color: #f9f3d8;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  99.9% {
+    border-right: .15em solid orange;
+  }
+  100% {
+    border: none;
+  }
+}
+
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: blue;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after {
+  width: 100%;
+  left: 0;
+}
